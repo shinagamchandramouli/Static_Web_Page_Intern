@@ -21,13 +21,7 @@ li {
 	list-style-type: none;
 	margin-left: 12%;
 	color: black;
-	border: solid 3px;
-	border-radius: 5px;
 	padding: 5px; 
-}
-
-li:hover {
-	border-color: blue;
 }
 
 a {
@@ -37,15 +31,15 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: black;
+	color: rgba(0,0,0,0.7);
 }
 
 .brand {
-	background-color: #f1c40f;
-	border: solid 3px;
 	text-align: center;
+	background-color: #ef5734;
+background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
 	border-radius: 5px;
-	box-shadow: -2px 2px #ffdd59;
+	box-shadow: -1px 1px rgba(0,0,0,0.3);
 	padding: 1px 8px;
 	font-size: 150%;
 }
@@ -55,13 +49,14 @@ a:hover {
 }
 
 nav {
-	background-image: linear-gradient(to right,#ffd32a,#c9f6fe);
-	width: 200%;
-	animation: bganimation 15s infinite;
+	
 }
 
 .holder {
 	display: flex;
+	background-image: linear-gradient(to right,#ffd32a,#dff9fb,#ffd32a,#dff9fb);
+	background-size: 350%;
+	animation: bganimation 15s infinite alternate;
 	padding: 10px 15px;
 }
 
@@ -134,16 +129,12 @@ footer {
 
 @keyframes bganimation {
 
-	0% {
-		background-position: right;
+	from {
+		background-position: 0%;
 	}
 
-	50% {
-		background-position: left;
-	}
-
-	100% {
-		background-position: right;
+	to {
+		background-position: 100%;
 	}
 
 }
