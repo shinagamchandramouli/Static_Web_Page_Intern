@@ -7,6 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: black;
+	overflow-x: hidden;
 }
 
 ul {
@@ -20,6 +21,13 @@ li {
 	list-style-type: none;
 	margin-left: 12%;
 	color: black;
+	border: solid 3px;
+	border-radius: 5px;
+	padding: 5px; 
+}
+
+li:hover {
+	border-color: blue;
 }
 
 a {
@@ -27,9 +35,14 @@ a {
 	color: black;
 }
 
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
 .brand {
 	background-color: #f1c40f;
-	border: solid 1px;
+	border: solid 3px;
 	text-align: center;
 	border-radius: 5px;
 	box-shadow: -2px 2px #ffdd59;
@@ -37,9 +50,18 @@ a {
 	font-size: 150%;
 }
 
+.brand:hover {
+	border-color: blue;
+}
+
+nav {
+	background-image: linear-gradient(to right,#ffd32a,#c9f6fe);
+	width: 200%;
+	animation: bganimation 15s infinite;
+}
+
 .holder {
 	display: flex;
-	background-color: #ffd32a;
 	padding: 10px 15px;
 }
 
@@ -93,12 +115,12 @@ a {
 
 .card-holder {
 	display: flex;
+	justify-content: space-around;
 	margin-top: 10px;
 }
 
 .card {
-	margin-left: 20px;
-	margin-right: 40px;
+	float: left;
 }
 
 .copyrights {
@@ -107,4 +129,80 @@ a {
 
 footer {
 	margin-top: 40px;
+	background-color: gold;
+}
+
+@keyframes bganimation {
+
+	0% {
+		background-position: right;
+	}
+
+	50% {
+		background-position: left;
+	}
+
+	100% {
+		background-position: right;
+	}
+
+}
+
+/****** Movies Page Styles ******/
+
+.dropdown:hover > .dropdown-menu {
+	display: block;
+}
+
+.body-holder {
+	overflow: hidden;
+}
+
+.search-drop-cards {
+	display: flex;
+	margin: 10px 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.search {
+	width: 70%;
+	padding: 1px;
+}
+.search-holder {
+	display: flex;
+	border: solid 1px;
+	align-items: center;
+}
+
+input {
+	width: 100%;
+	text-align: center;
+	border: none;
+}
+
+.movie-holder {
+	margin: 10px 30px;
+	position: relative;
+}
+
+.movie {
+	margin: 10px 20px;
+	width: 200px;
+	height: 200px;
+	float: left;
+	background-image: url(images/card.jpg);
+	background-size: cover;
+	background-position: 0% 20%; 
+	text-align: center;
+	position: relative;
+}
+
+.mv-details {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	bottom: 0px;
+	color: white;
 }
