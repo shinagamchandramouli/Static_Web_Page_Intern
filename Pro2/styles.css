@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: #C8C8C8;
+	background-color: #A9A9A9;
 }
 
 .branding {
@@ -42,8 +42,10 @@ body {
 
 .list-holder > ul > li{
 	display: inline;
-	padding: 10px;
-	border: solid 1px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: black;
+	margin-right: 15px;
 }
 
 .list-holder > ul > li > a{
@@ -54,7 +56,8 @@ body {
 
 .list-holder > ul{
 	margin: 0px;
-	padding: 0px;
+	padding: 10px;
+	display: flex;
 }
 
 .view-users {
@@ -68,4 +71,168 @@ body {
 	border-radius: 5px;
 	border: solid 1px;
 	padding: 5px;
+}
+
+.holder {
+	margin: 0px 40px;
+	padding: 0px 5px;
+}
+
+.sec1 {
+	display: flex;
+	background-color: #c8c8c8;
+	padding: 10px;
+}
+
+#b1 > img , #b3>img {
+	width: 100%;
+	height: 150px;
+	padding: 0px 0px;
+}
+
+#b1, #b2, #b3 {
+	width: 33%;
+	display: inline;
+}
+
+hr {
+	margin: 0px;
+}
+
+.space {
+	background-color: #DCDCDC;
+	padding: 5px 2px;
+	border-radius: 5px;
+	margin: 8px 0px;
+}
+
+ #b2 > div > img{
+	width: 90px;
+	height: 90px;
+}
+
+#b2 > div > p {
+	margin-left: 10px;
+}
+
+#b2 {
+	display: flex;
+	margin: 0px 10px;
+	flex-direction: column;
+}
+
+#a1, #a2, #a3 {
+	display: flex;
+	margin: 10px 0px;
+}
+
+.sec2 {
+	display: flex;
+}
+
+.ft-holder {
+	background-color: rgb(0,0,0,0.8);
+	text-align: center;
+	color: white;
+	padding: 1px;
+}
+
+.r1{
+	margin-top: 10px;
+}
+
+.r1 > ul > li > a {
+	text-decoration: none;
+	color: white;
+	margin-right: 10px;
+}
+
+.r1 > ul > li {
+	list-style-type: none;
+	display: inline;
+	font-weight: bold;
+	font-size: 95%; 
+}
+
+.r1 > ul > li > a:hover {
+	color: blue;
+}
+
+.r2 {
+	margin-bottom: 20px;
+	font-weight: bold;
+	font-size: 95%;
+}
+
+.r3 > div{
+	display: inline;
+}
+
+.r3 > div > img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+.r3 > div > img:hover {
+	opacity: 0.7;
+}
+
+.r4 {
+	margin-top: 15px;
+	margin-bottom: 30px;
+
+}
+
+small {
+	font-weight: bold;
+}
+
+/*****Article page*****/
+
+.main-article {
+	display: flex;
+	margin: 20px 80px;
+}
+
+.likes , .article-image {
+	width: 49%;
+}
+
+.article-image {
+	text-align: right;
+}
+
+.article-image > img {
+	width: 500px;
+}
+
+.likes {
+	margin-right: 50px;
+	padding-top: 50px;
+}
+
+.like , .dislike{
+	background-color: white;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+	margin-right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dislike > img{
+	width: 30px;
+}
+
+.like > img {
+	width: 25px;
+}
+
+.description {
+	margin: 0px 80px;
 }
