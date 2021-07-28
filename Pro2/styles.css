@@ -175,6 +175,7 @@ hr {
 }
 
 .r3 > div > img:hover {
+	cursor: pointer;
 	opacity: 0.7;
 }
 
